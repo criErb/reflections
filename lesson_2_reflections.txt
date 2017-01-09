@@ -2,3 +2,12 @@ Q - What happens when you initialize a repository? Why do you need to do it?
 A - With the command "git init" I initialize a directory. In this way I allow to this directory to became a git repo.
 
 T - "atom [fileName.file]" create a new file and open it on atom editor. Save the file to save it into directory.
+
+T - With "git add [fileName.file]" we add to the staging area the file we want commit later. We can use "git add ." to
+    add in staging area all files modified.
+
+T - The command "git status" allow me to view which file/s I have added to staging area.
+
+Q - How is the staging area different from the working directory and the repository? What value do you think it offers?
+A - In staging area we add modified files, not committed yet. Plus value offer is that we have a intermediate level between working directory
+    and repository, so we don't have to commit each modify.

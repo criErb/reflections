@@ -1,0 +1,4 @@
+Q - What happens when you initialize a repository? Why do you need to do it?
+A - With the command "git init" I initialize a directory. In this way I allow to this directory to became a git repo.
+
+T - "atom [fileName.file]" create a new file and open it on atom editor. Save the file to save it into directory.

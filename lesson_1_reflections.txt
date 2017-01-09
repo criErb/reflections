@@ -1,0 +1,53 @@
+---------------
+| REFLECTIONS |
+---------------
+
+Q - How did viewing diff between two versions of a file help me to see the bug/s introduced?
+A - With the command "diff file1.js file2.js". It allows me to view the difference between two files. Instead file names
+    I indicate the commit id/hash, I can view difference beetween two commits.
+
+Q - How could heaving easy access to the entire history of a file make you a more efficent programmer in long term?
+A - Because I can know when something changes in that file, and why. With "git log" I can access the history of a commit.
+
+T - "Git works locally in my computer. This means I can work in a project even without a internet connection."
+
+- Type of version control systems:
+  - Manual saving
+  - Google docs
+  - Dropbox
+  - Wikipedia
+  - GIT
+  - Svn
+
+- COMMITS
+ Commits is a component of git. When I do a "commit", I do a Snapshot of the repo, that override the old version.
+ I can always access to all the project commits with "git log". Heach commit have an ID/hash, an author, a date and a
+ commit message that explain commit reason. With "git diff commitID1 commitID2" I can view differences between
+ two commits. Diff is related to commits.
+
+Q - When a commit size is too big and when too small?
+A - There is not an answer to this question, because every case is different by the other. A commit shoul be
+    related to a new feature, then when the work of the new feature is complete, I can commit. But if the work is very long,
+    will be difficult find diff between two commits. one-three hours is a reasonable working commit time.
+    Fix two bug and do one commit it's a mistake, because each bug fixed must have his commit.
+
+Q - How can I view the which files are changed in commits?
+A - With "git log --stats" I can view all the commits as usual, but in each commits is indicated the file changed and
+    details about it changes.
+
+T - Command "git version" allows you to know what version of git you have installed on you computer
+
+Q - How I can download a repository from gitHub?
+A - With "git clone url//url of the repo" you can clone the remote repo into your computer. When you want to clone a repo,
+    your position in directories must be the position when you want the cloned project will be placed.
+
+Q - How might using version control make you more confident to make changes that could break something?
+A - Because we even find the commit with the bug, fix it or checkout to the previous commit. We can do this with
+    "git checkout IDcommitNumber". We can go back in the log history, checkout to the commits before and find where
+    the bug was introduced, running the release in the browser "open [fileName.file]". After that, with "git diff IDcommitNumber1 IDcommitNumber2"
+    we can compare the differences between the two commits and fix the bug.
+
+T - "cmd + shift + h" to open the users directory on mac
+
+T - "git init" command allows me to create a git repository. Before run this command, I must be in the directory that will be the git repository of
+    my project.

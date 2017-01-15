@@ -2,3 +2,7 @@ T - To view diff between local branch and remote branch, type "git diff [localBr
 
 Q - When would you want to use a remote repository rather than keeping all your work local?
 A - When we should share file with other developers.
+
+Q - Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+A - There are several motivation to prefer manual pull changes: Work locally in my computer; Commit methodically features to remote branch,
+    give to our team mates finished version of our feature intruduced.

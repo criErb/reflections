@@ -11,3 +11,30 @@ T - The command "git status" allow me to view which file/s I have added to stagi
 Q - How is the staging area different from the working directory and the repository? What value do you think it offers?
 A - In staging area we add modified files, not committed yet. Plus value offer is that we have a intermediate level between working directory
     and repository, so we don't have to commit each modify.
+
+T - If I use the command "git diff", I view the modify between working directory file/s and last commit. But if I have 2
+    files modified, I add only one to staging area, I will view difference between working directory file and staged file.
+    To view diff between staged file/s and last commit file/s, use the command "git diff --staged".
+
+Q - How can you use the staging area to make sure you have one commit per logical change?
+A - Using "git add [fileName.file]" I'll be sure to add a file with a specific change, and commit after with "git commit -m "added changes"".
+
+T - "git branch [NewBranchName]" create a new branch on the repository. At the begin, this new branch is a copy of the branch where we were.
+    To start work in the new branch, we type the command "git checkout [newBranchName]", and we move on the new branch.
+    A shortcut to create a new branch and checkout directly is "git checkout -b [newBranchName]".
+
+T - We have a master branch. We want to apply a new feature on our work, so we dedided to create a new branch "git checkout -b [branch name]". Working on
+    this new feature, we did 3 commits. But also master branch go ahead by 4 commits. Now we have two different branches, and we want to know
+    in which commits of master branch are missing to [newBranch]. I can do this with "git log --graph --oneline master [newBranch]", and watch the
+    history of both branches by a diagram, and better understand the point when [newBranch] was created by master (and what is last commit in commo).
+
+Q - How do the diagrams help you visualize the branch structure?
+A - Because visualizing commits of each brach give more awareness of our position inside the repository, and what actions we did in each branch
+
+T - When I do a merge from a branch to master, it will ask me a commit message. To do this, press "i", type the message, press esc, type :wq end Press enter.
+
+T - To do a merge, we can do "git merge [branch1] [branch2]".
+
+Q - What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+A - Pros are: order of the branch commits, know which files are modified in more than one branch, merge differen branch whit different features. Cons are
+    possible confilts in files modified by two or more developers.

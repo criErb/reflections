@@ -1,1 +1,3 @@
+T - To view diff between local branch and remote branch, type "git diff [localBranch] [remoteBranch]" ex. "git diff master origin/master".
+
 Q - When would you want to use a remote repository rather than keeping all your work local?
